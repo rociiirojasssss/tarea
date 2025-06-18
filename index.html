@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de Rocio y Duglas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e3afd9;
+      color: #333;
+    }
+
+    header {
+      background-color: #4c204f;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      background-color: #f8c6f8;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+
+    nav button {
+      background-color: #784484;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    nav button:hover {
+      background-color: #e26aa7;
+    }
+
+    section {
+      display: none;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(200, 95, 168, 0.2);
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #c85fa8;
+    }
+
+    .persona {
+      padding: 15px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 0 5px rgba(150, 80, 150, 0.2);
+    }
+
+    .persona h3 {
+      margin-top: 0;
+    }
+
+    .rocio {
+      background-color: #ffe6f1;
+      border-left: 6px solid #e26aa7;
+    }
+
+    .rocio h3 {
+      color: #a43e83;
+    }
+
+    .duglas {
+      background-color: #e0f0ff;
+      border-left: 6px solid #5a9bd4;
+    }
+
+    .duglas h3 {
+      color: #3a7ab5;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✨ ";
+      color: #e75480;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌷 Portafolio Personal de Rocio y Duglas</h1>
+    <p>Bienvenido a nuestro espacio personal 🌟</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('presentacion')">Mi presentación</button>
+    <button onclick="mostrarSeccion('cualidades')">Mis cualidades</button>
+    <button onclick="mostrarSeccion('reflexion')">Reflexión personal</button>
+  </nav>
+
+  <!-- Presentación -->
+  <section id="presentacion" class="active">
+    <h2>💫 Mi presentación</h2>
+
+    <div class="persona rocio">
+      <h3>🌸 Rocio</h3>
+      <p>Hola, soy Rocio. Me considero una persona sensible, crítica, observadora y con muchas ganas de aprender. Este blog refleja cómo soy: reflexiva, con emociones sinceras y una visión propia del mundo. Aquí comparto quién soy desde adentro.</p>
+      <img src="WhatsApp Image 2025-06-16 at 10.14.49 PM.jpeg" alt="Foto de Rocio" style="width: 200px; border-radius: 12px; margin-bottom: 10px;" />
+    </div>
+
+    <div class="persona duglas">
+      <h3>🎨 Duglas</h3>
+      <p>Hola, soy Duglas. Soy una persona creativa, analítica y observadora, con una profunda pasión por el diseño gráfico. Me encanta comunicar ideas visualmente, transformar emociones en imágenes y darle forma a los pensamientos a través del arte digital. Este blog refleja mi esencia: auténtico, sensible y con una mirada estética que busca siempre algo más. Aquí comparto quién soy.</p>
+    <img src="WhatsApp Image 2025-06-16 at 10.29.55 PM.jpeg" alt="Foto de Rocio" style="width: 200px; border-radius: 12px; margin-bottom: 10px;" />
+    </div>
+  </section>
+
+  <!-- Cualidades -->
+  <section id="cualidades">
+    <h2>🌸 Mis cualidades personales</h2>
+
+    <div class="persona rocio">
+      <h3>🌸 Rocio</h3>
+      <ul>
+        <li><strong>Reflexiva:</strong> Me gusta analizar, cuestionar y entender profundamente lo que sucede a mi alrededor.</li>
+        <li><strong>Empática:</strong> Me esfuerzo por comprender los sentimientos de los demás y conectar desde el respeto.</li>
+        <li><strong>Creativa:</strong> Disfruto expresarme a través del arte, el diseño y las ideas originales.</li>
+        <li><strong>Comunicativa:</strong> Me gusta compartir ideas y conectar con las personas a través de las palabras.</li>
+        <li><strong>Responsable:</strong> Cumplo con mis compromisos y me tomo en serio la confianza que depositan en mí.</li>
+        <li><strong>Sensible:</strong> Vivo mis emociones con intensidad, lo cual me conecta con lo más humano.</li>
+        <li><strong>Amorosa:</strong> Entrego mucho amor en mis relaciones, aunque a veces eso me haga daño.</li>
+      </ul>
+    </div>
+
+    <div class="persona duglas">
+      <h3>🎨 Duglas</h3>
+      <ul>
+        <li><strong>Creativo:</strong> Me gusta crear y comunicar de forma original a través del diseño.</li>
+        <li><strong>Observador:</strong> Observo con detalle los elementos visuales y sus mensajes.</li>
+        <li><strong>Analítico:</strong> Analizo y resuelvo problemas visuales con lógica y estilo.</li>
+        <li><strong>Colaborativo:</strong> Disfruto trabajar en equipo, compartir ideas y construir proyectos con una visión común.</li>
+        <li><strong>Profesional:</strong> Cumplo con mis responsabilidades y entrego cada proyecto con dedicación y compromiso.</li>
+        <li><strong>Curioso:</strong> Exploro constantemente nuevas formas de crecer como diseñador.</li>
+        <li><strong>Apasionado:</strong> Amo lo que hago y pongo parte de mí en cada trabajo creativo que desarrollo.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Reflexión -->
+  <section id="reflexion">
+    <h2>📝 Reflexión personal: ¿Quién soy?</h2>
+
+    <div class="persona rocio">
+      <h3>🌸 Rocio</h3>
+      <p>A veces me cuesta definirme con exactitud, pero hay algo que tengo claro: soy una persona que <strong>siente intensamente y piensa profundamente</strong>. Tengo un corazón que no se cierra, aunque a veces duela, y una mente que no se conforma, aunque se canse.</p>
+      <p>Soy reflexiva, empática, creativa y sensible. Comunico lo que siento, me entrego en lo que hago y busco vivir de forma auténtica. En lo emocional, me entrego con el alma. Aunque a veces el amor no sea recíproco, sigo creyendo en su poder.</p>
+      <p>Así soy yo: una mezcla de pensamientos profundos, emociones sinceras, heridas que me han hecho fuerte y un cariño que aún tengo para dar. Me acepto con luz y sombra, porque todo lo que soy… también es lo que me hace única.</p>
+    </div>
+
+    <div class="persona duglas">
+      <h3>🎨 Duglas</h3>
+      <p>Me detengo a pensar en <strong>quién soy realmente</strong>, más allá de lo profesional. Soy alguien que <strong>piensa y siente con intensidad</strong>, que busca ser auténtico y dar lo mejor de sí en cada proyecto. Como diseñador gráfico, encuentro en lo visual una forma de expresar lo que llevo dentro. </p>
+      <p>Me reconozco como alguien <strong>curioso, observador, creativo y sensible</strong>. Valoro el detalle, la estética, pero también la honestidad emocional. A través del diseño, conecto con los demás y conmigo mismo.</p>
+      <p>Así soy yo: una mezcla de mente estratégica y corazón artístico. Con cicatrices que me han formado y una pasión que me impulsa a seguir creando. Me acepto con aciertos y errores, porque todo eso también es parte de lo que soy.</p>
+    </div>
+  </section>
+
+  <footer>
+    Hecho con 💗 por Rocio y Duglas
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll("section");
+      secciones.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
